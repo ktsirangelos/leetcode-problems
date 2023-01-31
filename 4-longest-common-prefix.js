@@ -9,11 +9,11 @@ const longestCommonPrefix = function (strs) {
     }
   } else {
     let counter = 0;
-    let counterNew = 0;
+    let storeCounter = 0;
     let slicePosition = 1;
     let currentPrefix = strs[0].slice(0, slicePosition);
     let commonPrefix = "";
-    while (counter == counterNew && commonPrefix.length < strs[0].length) {
+    while (counter == storeCounter && commonPrefix.length < strs[0].length) {
       for (let j = 0; j < strs.length; j++) {
         if (currentPrefix == strs[j].slice(0, slicePosition)) {
           counter++;
@@ -22,10 +22,10 @@ const longestCommonPrefix = function (strs) {
       if (counter == strs.length * slicePosition) {
         commonPrefix = strs[0].slice(0, slicePosition++);
         currentPrefix = strs[0].slice(0, slicePosition);
-        counterNew = counter;
+        storeCounter = counter;
       }
     }
-    if (counterNew > 0) {
+    if (storeCounter > 0) {
       return commonPrefix;
     } else {
       return "";
