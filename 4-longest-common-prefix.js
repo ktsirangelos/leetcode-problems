@@ -1,5 +1,3 @@
-"use strict";
-
 const longestCommonPrefix = function (strs) {
   if (strs.length == 1) {
     if (strs.includes("")) {
