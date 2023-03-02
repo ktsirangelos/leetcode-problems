@@ -39,6 +39,6 @@ const romanToInt = function (s) {
     ["II", 2],
     ["I", 1],
   ];
-  relationships.forEach((array) => transform(array));
+  relationships.forEach((pair) => transform(pair));
   return int;
 };
