@@ -1,10 +1,6 @@
 const longestCommonPrefix = function (strs) {
   if (strs.length == 1) {
-    if (strs.includes("")) {
-      return "";
-    } else {
-      return strs[0];
-    }
+    return strs.includes("") ? "" : strs[0];
   } else {
     let counter = 0;
     let storeCounter = 0;
@@ -23,10 +19,6 @@ const longestCommonPrefix = function (strs) {
         storeCounter = counter;
       }
     }
-    if (storeCounter > 0) {
-      return commonPrefix;
-    } else {
-      return "";
-    }
+    return storeCounter > 0 ? commonPrefix : "";
   }
 };
