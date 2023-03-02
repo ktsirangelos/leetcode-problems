@@ -1,4 +1,4 @@
-function romanToInt(s) {
+const romanToInt = function (s) {
   let int = 0;
   let string = s;
 
@@ -52,4 +52,4 @@ function romanToInt(s) {
   transform("I", 1);
 
   return int;
-}
+};
