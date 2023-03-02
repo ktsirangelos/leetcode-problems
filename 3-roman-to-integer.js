@@ -1,5 +1,4 @@
 /**
- * Transforms a string of Roman numerals to an integer
  * @param {string} string
  * @returns {number}
  */

@@ -1,5 +1,4 @@
 /**
- * Checks if a number is a palindrome
  * @param {number} integer
  * @returns {boolean}
  */
