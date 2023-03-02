@@ -1,5 +1,6 @@
-// Palindrome
-// Given an integer x, return true if x is a palindrome, and false otherwise.
+/* Palindrome
+Given an integer x, return true if x is a palindrome, and false otherwise.
+*/
 
 const isPalindrome = function (x) {
   const arrayOfDigits = Array.from(String(x), Number);
