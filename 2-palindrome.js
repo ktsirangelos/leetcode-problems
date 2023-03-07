@@ -1,7 +1,3 @@
-/**
- * @param {number} integer
- * @returns {boolean}
- */
 const isPalindrome = function (integer) {
   const arrayOfDigits = Array.from(String(integer), Number);
   const middle = Math.floor(arrayOfDigits.length / 2);

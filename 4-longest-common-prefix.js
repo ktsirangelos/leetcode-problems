@@ -1,7 +1,3 @@
-/**
- * @param {string[]} arrayOfStrings
- * @returns {string}
- */
 const longestCommonPrefix = function (arrayOfStrings) {
   if (arrayOfStrings.length == 1) {
     return arrayOfStrings.includes("") ? "" : arrayOfStrings[0];
