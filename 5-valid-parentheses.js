@@ -3,6 +3,15 @@
 const isValid = function (string) {
   if (!string.length > 0) return;
 
+  const characterBindings = {
+    parLeft,
+    parRight,
+    braLeft,
+    braRight,
+    curlLeft,
+    curlRight,
+  };
+
   const arrayOfCharacters = Array.from(string);
 
   console.log(arrayOfCharacters);
@@ -18,7 +27,9 @@ const isValid = function (string) {
     let indCurlRight = [];
 
     for (const [index, element] of array.entries()) {
-      if (element === "(") indParLeft.push(index);
+      if (element === "(") {
+        characterBindings.parLeft = index;
+      }
       if (element === ")") indParRight.push(index);
 
       if (element === "[") indBraLeft.push(index);
